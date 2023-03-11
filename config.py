@@ -1,10 +1,13 @@
 import os
 from sqlalchemy import create_engine
 
+import urllib
 
 class Config(object):
     SECRET_KEY='SUPER_SECRET_KEY'
     SESSION_COOKIE_SECURITY=False
+
+# Proceso de Configuracion a la BD
 
 class DevelopmentConfig(Config):
     DEBUG=True
